@@ -1,0 +1,75 @@
+/* Généralité */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.flex{
+    display: flex;
+}
+
+.ordi{
+    display: none;
+}
+
+/* header */
+
+header{
+    width: 100%;
+}
+
+.menu{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menuhaut{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Barre{
+    Height: 18px;
+}
+
+.logo{
+    width: 68px;
+    height: 67px;
+}
+
+nav{
+    font-size: 10px;
+    justify-content: space-between;
+}
+
+nav a{
+    color: black;
+}
+
+.noel{
+    font-family: 'Shrikhand', cursive;
+}
+
+/* media */
+
+@media (min-width:700px) {
+   .ordi{
+       display: initial;
+   }
+
+   .tel{
+       display: none;
+   }
+
+   nav a{
+       font-size: 30px;
+   }
+}
