@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
   }
   
   a{
@@ -66,8 +67,48 @@
   .pub img{
     width: 100%;
   }
+
+  /* Categorie */
+
+  .categorie{
+      margin-top: 61px;
+  }
+
+  .categorie h1{
+      font-family: 'Shrikhand', cursive;
+      font-size: 60px;
+      text-align: center;
+  }
+
+  .catdistance{
+      justify-content: space-around;
+      margin-top: 56px;
+  }
+
+  /* footer */
+
+  footer{
+    margin-top: 33px;
+    background: black;
+    color: white;
+    font-size: 40px;
+    padding: 19px 67px;
+  }
+
+  footer h2{
+      color: red;
+      font-family: 'Shrikhand', cursive;
+  }
+
+  .copyright{
+      text-align: center;
+      margin-top: 10px;
+      font-size: 30px;
+  }
+
+
   
-  
+  /* media tel */
   
    @media (max-width: 768px){
   
@@ -91,7 +132,7 @@
   }
   
   /* menu hamburger */
-  
+
     #navburger a{
       background: white;
     }
@@ -119,7 +160,6 @@
   
     display : block;
     position: absolute;
-    right   : 0;
     top     : 0;
     margin  : 0;
     width   : 100vw;
@@ -191,46 +231,43 @@
     width    : 110%;
     transform: rotate(-45deg);
   }
+
+  /* pub */
+
+  .pub img{
+      
+    height: 30vh;
+  }
   
+  /* Catégorie */
+
+  .catdistance{
+      align-items: center;
   }
 
-/* Carousel */
+  .nouv{
+      align-items: center;
+  }
 
-.carousel{
-    position: relative;
-    overflow: hidden;
-}
+  .categorie h1{
+      font-size: 20px;
+  }
 
-.carousel__container{
-    transition: transform 0.3s;
-    transform: translate3d(0 , 0 , 0);
-}
+  .HFE{
+      flex-direction: column;
+      gap: 49px;
+  }
 
-.carousel__container::after {
-    content: '';
-    clear: both;
-    display: table;
-}
+  /* footer */
 
-.carousel__item{
-    float: left;
-}
+  footer{
+      font-size: 30px;
+      padding: 16px 0;
+  }
 
-.carousel__next, .carousel__prev{
-    position:absolute;
-    width: 40px;
-    height: 40px;
-    background: #FFF url(images/fleche.png) no-repeat center / center;
-    background-size: 20px 20px;
-    border-radius: 50%;
-    top: 50%;
-    margin-top: -20px;
-    right: -20px;
-    cursor: pointer;
-}
+  .copyright{
+      font-size: 20px;
+  }
 
-.carousel__prev{
-    background-image: url(images/fleche2.png);
-    right: auto;
-    left: -20px;
-}
+  }
+
