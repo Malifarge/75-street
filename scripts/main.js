@@ -19,8 +19,6 @@ function showResponsiveMenu() {
 
 const items = document.querySelectorAll('.slider img')
 const nbSlide = items.length;
-const suivant = document.querySelector('.right')
-const precedent = document.querySelector('.left')
 let count = 1
 
 function slideSuivante(){
@@ -38,4 +36,16 @@ function slideSuivante(){
     setTimeout ("slideSuivante()", 4000)
 }
 
-window.onload = slideSuivante
+window.onload = function() {slideSuivante(); textanim()} 
+
+// animation textes
+
+
+function textanim(){
+
+    gsap.from(".texte", {duration: 2, text: ""})
+
+    setTimeout ("textanim()",6000)
+}
+
+

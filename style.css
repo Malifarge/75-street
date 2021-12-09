@@ -86,8 +86,13 @@
 
   /* Categorie */
 
+
   .categorie{
       margin-top: 61px;
+  }
+
+  .catpresence{
+   height: 70px;
   }
 
   .categorie h1{
