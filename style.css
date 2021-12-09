@@ -30,6 +30,10 @@
     justify-content: space-around;
     width: 100%;
   }
+
+  .menu img{
+    width: 100%;
+  }
   
   .menu{
     width: 100%;
@@ -39,7 +43,7 @@
   .menuhaut{
     justify-content:space-between;
     align-items: center;
-    height: 135px;
+    min-height: 135px;
     width: 100%;
   }
   
@@ -141,6 +145,15 @@
   
   .barre{
     height: 31px;
+  }
+ 
+  .logo{
+    height:84px ;
+    width: 79px;
+  }
+
+  .menu img{
+    width: auto;
   }
   
   /* menu hamburger */
