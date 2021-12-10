@@ -1,0 +1,401 @@
+
+*, ::after, ::before{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  border: 2px solid green;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+    color: red;
+}
+
+
+.flex{
+  display: flex;
+}
+
+body{
+  line-height: 1.4;
+}
+
+/* header */
+
+header{
+  justify-content: space-around;
+  width: 100%;
+}
+
+.menu img{
+  width: 100%;
+}
+
+.menu{
+  width: 100%;
+  flex-direction: column;
+}
+
+.menuhaut{
+  justify-content:space-between;
+  align-items: center;
+  min-height: 135px;
+  width: 100%;
+}
+
+nav a{
+  color: black;
+}
+
+nav {
+  justify-content: space-between;
+  font-size: 35px;
+  width: 100%;
+}
+
+.noel{
+  font-family: 'Shrikhand', cursive;
+  font-weight: bold;
+}
+
+.tel{
+  display: none;
+}
+
+/* media */
+
+.produit p{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* debut des betise */
+.produit{
+    justify-content: space-around;
+    width: 100%;
+    
+    
+}
+.prix{
+    padding: 50px;
+   font-size: 40px;
+   
+   
+}
+.prix h1{
+    text-shadow: 5px 2px 2px gray;
+}
+
+.model{
+    
+    border: solid black 2px;
+    width: min (789px,90%);
+    min-height: 345px;
+    
+}
+
+ .red{
+    color: red;
+}
+.barré{
+    
+    text-decoration-line: line-through;
+}
+.description{
+    border: solid black 1px;
+    min-height: 345px;
+    width:min (750px,90%) ;
+    flex-direction: column;
+    line-height: 50px;
+    padding: 30px;
+    font-size: 35px;
+}
+.description .sup{
+  font-size: 50px;
+  background: red;
+}
+.description a{
+  color: red;
+  font-size: 18px;
+  text-decoration: underline;
+}
+.description ol, .recapitulatif ol{
+    list-style-type: none;
+}
+
+/* recapitulatif */
+.recapitulatif ol{
+    display: flex;
+    align-items: flex-start;
+   flex-direction: column;
+    gap: 20px;
+}
+.recapitulatif{
+    border: solid black 4px;
+    min-height: 455px;
+    width:min (789px,90%) ;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(10px,2vh,30px);
+}
+.gray {
+    color: gray;
+}
+.cp{
+    line-height: 10px;
+    font-size: 20px; 
+    margin-left: 15px;
+    
+}
+/* livraison */
+
+.livraison {
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    border: solid black 4px;
+    width: min (789px,90%);
+    height: 102px;
+    
+}
+
+.payement{
+    
+    gap: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    width: min (462px,90%);
+    height: 320px;
+    align-items: center;
+    
+}
+.payement a {
+    background-color: white;
+    width: 462px;
+    height: 88px;
+    font-size: 40px;
+    border-radius: 2px;
+    box-shadow: 10px 5px 5px gray;
+    text-decoration: none;
+   
+
+}
+    
+
+
+.payement h3 {
+    
+    
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid black 1px;
+  
+}
+
+.regroupage{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.regroupage2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: red solid 4px;
+}
+footer{
+    margin-top: 33px;
+    background: black;
+    color: white;
+    font-size: clamp (20px,2vh,40px);
+    padding: 19px 67px;
+  }
+
+  footer h2{
+      color: red;
+      font-family: 'Shrikhand', cursive;
+  }
+
+  .copyright{
+      text-align: center;
+      margin-top: 10px;
+      font-size: 30px;
+  }
+  @media (max-width: 1366px){
+  
+    /* menu */
+  
+     .tel{
+       display: block;
+     }
+  
+     .ordi{
+       display: none;
+     }
+  
+     .menutel{
+       display: flex;
+       justify-content: space-between;
+     }
+  
+  .barre{
+    height: 31px;
+  }
+ 
+  .logo{
+    height:84px ;
+    width: 79px;
+  }
+
+  .menu img{
+    width: auto;
+  }
+  
+  /* menu hamburger */
+
+    #navburger a{
+      background: white;
+    }
+  
+     #navburger div{
+      display       : flex;
+      flex-direction: column;
+      position: absolute;
+      margin  : 0;
+      right   : 0;
+      top     : 20%;
+      
+    ;
+      min-width: 50vw;
+      height   : 40vh;
+     }
+  
+     #root {
+      position: relative;
+      overflow-x: hidden;
+  }
+  
+  
+   #navburger {
+  
+    display : block;
+    position: absolute;
+    top     : 0;
+    margin  : 0;
+    width   : 100vw;
+    height  : 100vh;
+  
+    z-index: 99;
+  
+    transform-origin: 0% 0%;
+    transform       : translate(200%, 0);
+  
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+  
+   }
+  
+   #navburger.open {
+    transform: none;
+    position : fixed;
+  }
+  
+  #burger span{
+    display      : block;
+          position     : absolute;
+          height       : 4px;
+          width        : 100%;
+          margin-bottom: 5px;
+          background   : #000000;
+          border-radius: 3px;
+          z-index      : 100;
+          left         : 0;
+  
+          transform : rotate(0deg);
+          transition: .25s ease-in-out;
+   }
+  
+  #burger{
+  
+    display    : block;
+    position   : relative;
+    margin     : 0 16px;
+    width      : 33px;
+    height     : 28px;
+    z-index    : 100;
+          user-select: none;
+          cursor     : pointer;
+  }
+  
+  #burger span:nth-child(1) {
+    top             : 0px;
+    transform-origin: left top;
+  }
+  #burger span:nth-child(2) {
+    top             : 12px;
+    transform-origin: left center;
+  }
+  #burger span:nth-child(3) {
+    top             : 24px;
+    transform-origin: left bottom;
+  }
+  
+  #burger.open span:nth-child(1) {
+    width    : 110%;
+    transform: rotate(45deg);
+  }
+  #burger.open span:nth-child(2) {
+    width  : 0%;
+    opacity: 0;
+  }
+  #burger.open span:nth-child(3) {
+    width    : 110%;
+    transform: rotate(-45deg);
+  }
+  .produit{
+      min-width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+  }
+
+  .model{
+    width: 90%;
+    background-color: red;
+    margin: auto;
+  }
+
+  .livraison{
+    width: 90%;
+  }
+  .recapitulatif{
+    width: 90%;
+  }
+  .payement{
+      width: 90%;
+  }
+  
+  .regroupage2{
+    width: 100%;
+    background-color: blue;
+  }
+  
+  .copyright{
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+  }
+  .model{
+      display: flex;
+      flex-direction: column;
+  }
+  
+  }
